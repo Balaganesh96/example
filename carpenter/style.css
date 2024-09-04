@@ -1,0 +1,451 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 1366px;
+    height: 100%;
+    overflow-x: hidden;
+}
+nav{
+    height: 120px;
+    width: 100vw;
+    background: #2c3e50;
+
+    z-index: 1;
+}
+nav img{
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-radius: 30px 20px 20px 30px;
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 15px;
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px 0;
+    text-decoration: none;
+}
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a:hover:before{
+transform: scaleX(1);
+transform-origin: left;
+}
+label #btn,
+label #cancel{
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:1366px) {
+ nav img{
+    left: 8%;
+    top: 60px;
+    width: 130px;
+ }
+ nav ul li a{
+    font-size: 17px;
+ }
+}
+@media (max-width:840px) {
+    label #btn{
+        display: block;
+    }
+  nav img{
+    display: none;
+  }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #34495e;
+        top: 120px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+       font-size:20px;
+    }
+    #check:checked ~ ul {
+  left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~  label #cancel{
+        display: block;
+    }
+   }
+
+   @media all and (max-width:400px){
+    .vedio>iframe{
+        display: none;
+    }
+ 
+
+    nav{
+        height: 120px;
+        width: 400px;
+        background: #2c3e50;
+    
+        z-index: 1;
+    }
+    nav img{
+        width: 200px;
+        height: 100px;
+        margin-top: 10px;
+        padding-left: 20px;
+        border-radius: 30px 20px 20px 30px;
+    }
+    nav ul{
+        float: right;
+        margin-right: 25px;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 15px;
+    }
+    nav ul li a{
+        position: relative;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 5px 0;
+        text-decoration: none;
+    }
+    label #btn{
+        display: block;
+    }
+  nav img{
+    display: none;
+  }
+    ul{
+        position: fixed;
+        width: 400px;
+        height: 100vh;
+        background: #34495e;
+        top: 120px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+       font-size:20px;
+    }
+    ul{
+        position: fixed;
+        width: 350px;
+        height: 100vh;
+        background: #34495e;
+        top: 120px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+       font-size:20px;
+    }
+    #check:checked ~ ul {
+  left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~  label #cancel{
+        display: block;
+    }
+}
+@media all and (max-width:400px){
+ 
+  
+    .container_fluied_headder12{
+        width: 100px;
+        height: 5px;
+        font-weight: bold;
+       
+        padding-left: -500px;
+        position: absolute;
+        padding-right: -500px; 
+    }
+    .container2{
+        width: 300px;
+        height: 0px;
+        font-weight: bold;
+        background-color: #ec5007;
+        padding-left: -500px;
+       position: relative;
+        padding-right: -500px; 
+        display: none;
+        
+    }
+    .container2>h1{
+        font-size: 16px;
+       color: #34495e;  
+         top: -20px;                                                                                                                                                                     
+        padding-left: -500px; 
+        position: relative;
+         padding-right: -500px;  
+         left: -200px;     
+         z-index: -100;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    }
+    .container3{
+        width: 400px;
+        height: 100px;
+        display: none;
+        font-weight: bold;
+        color:  #196f7e;
+        position: absolute;
+        margin-top: 60px;
+       
+    }
+    
+    .container3>h4{
+      position: relative;
+        left: -300%;
+}
+.container4{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+   
+}
+.container4>.card{
+   
+    position: relative;
+    top: 120px;
+    left: -100px;
+    width: 400px;
+}
+.container4>.card-body{
+ position: relative;
+ width: 400px;
+}
+.container7{
+    display: flex;
+    width: 400px;
+    position: absolute;
+    margin-top: 1800px;
+
+}
+.container7>h4{
+    position: relative;
+    left: -100px;
+   
+}
+.container8{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    position: absolute;
+    
+}
+.container8>.con1{
+    position: relative;
+    left: -100px;
+    top: 1900px;
+}
+.container9{
+    display: none;
+}
+.container9>.con2{
+    display: none;
+}
+.container10{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    position: absolute;
+}
+.container10>.con3{
+    position: relative;
+    left: -100px;
+    top: 2800px;
+}
+
+.container12{
+    width: 400px;
+    position: absolute;
+
+}
+.container12>iframe{
+ width: 400px;
+ margin-top: 3700px;
+}
+.container5{
+    width: 500px;
+    background-color: coral;
+}
+.container6{
+    display: flex;
+    width: 400px;
+    position: absolute;
+   
+   padding-top: 3500px;
+   
+}
+.container6>h4{
+    position: relative;
+    left: -100px;
+   
+}
+.container5{
+    
+        display: flex;
+        width: 400px;
+        position: absolute;
+       padding-top: 3600px;
+       margin-top: 4000px;
+       padding-left: -100px;
+}
+.container5>h5{
+    font-size: 14px;
+   
+    position: relative;
+    left: -80px;
+}
+.container5>h6{
+    font-size: 14px;
+    padding-left: -100px;
+    position: relative;
+    left: -10px;
+}
+}
+.container2{
+    width: 100%;
+    height: 100px;
+    font-weight: bold;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    padding-left: 350px;
+    font-size: 1.5em;
+    padding-top:25px;
+    color:  #2c3e50;
+}
+.container3{
+    width: 100%;
+    height: 100px;
+    padding-left: 100px;
+    padding-top: 20px;
+    font-weight: bold;
+    color:  #2c3e50;
+}
+.container4{
+    margin-left: 50px;
+    display: flex; 
+    font-weight: bold;
+}
+.container5{
+    width: 100%;
+    height: 100px;
+    background-color: #2c3e50;
+    margin-left: 0;
+    font-weight: bold;
+    color: white;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+.container5>h4{
+    padding-left: 10px;
+}
+.container5>h5{
+    padding-left: 10px;
+}
+.container5>h6{
+    padding-left: 10px;
+}
+.container6{
+    margin-top: 100px;
+    color: #2c3e50;
+    padding-left: 100px;
+    
+}
+.container7{
+    width: 100%;
+    height: 100px;
+   padding-left: 100px;
+    padding-top: 20px;
+    font-weight: bold;
+    color:  #2c3e50;
+}
+.container8{
+    display: flex;
+   margin-left: 150px;
+    width: 100%;
+    height: 300px;
+  
+
+}
+.container8>.con1>img{
+    width: 300px;
+    height: 250px;
+   
+   }
+.container9{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-left: 150px;
+   
+}
+.container9>.con2>img{
+    width: 300px;
+    height: 250px;
+   }
+.container10{
+    display: flex;
+    margin-left: 150px;
+    width: 100%;
+    height: 300px;
+    
+}
+.container10>.con3>img{
+ width: 300px;
+ height: 250px;
+}
